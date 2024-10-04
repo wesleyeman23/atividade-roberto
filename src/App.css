@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e9ecef;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f8f9fa;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px); /* Levanta o botão ao passar o mouse */
+}
+
+button.add-task {
+  background-color: #28a745; /* Verde */
+  color: white;
+}
+
+button.add-task:hover {
+  background-color: #218838; /* Verde Escuro */
+}
+
+button.edit {
+  background-color: #007bff; /* Azul */
+  color: white;
+}
+
+button.edit:hover {
+  background-color: #0056b3; /* Azul Escuro */
+}
+
+button.delete {
+  background-color: #dc3545; /* Vermelho */
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #c82333; /* Vermelho Escuro */
+}
+
+
+form {
+  margin: 20px 0;
+  text-align: center;
+}
+
+input[type="text"],
+textarea {
+  width: calc(100% - 20px); /* Ajusta a largura para compensar o padding */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #28a745; /* Verde */
+  outline: none;
+}
+
+.completed-tasks {
+  margin-top: 40px;
+  border-top: 2px solid #28a745; /* Verde */
+  padding-top: 20px;
+}
